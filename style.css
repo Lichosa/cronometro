@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Sniglet:wght@400;800&display=swap');
 
 :root {
-    --cor-de-fundo: #1E1E1E;
-    --verde: #6FFF57;
+    --cor-de-fundo: #24434b;
+    --amarelinho: #bfbc84;
     --branco: #FFFFFF;
-    --botao-ativo: #3A375E;
-    --botao-inativo: rgba(58, 55, 94, 0.5);
-    --texto-fundo: rgba(58, 55, 94, 0.3);
+    --botao-ativo: #63997a;
+    --botao-inativo: #fc325b;
+    --texto-fundo: #fa7f4b;
 }
 
 body {
     background-color: var(--cor-de-fundo);
     color: var(--branco);
-    font-family: 'Chakra Petch', sans-serif;
+    font-family: 'Dynapuff', sniglet;
 }
 
 
@@ -37,7 +37,7 @@ body {
 }
 
 .botao {
-    font-family: "Chakra Petch", sans-serif;
+    font-family: 'Dynapuff', sniglet;
     background-color: var(--botao-inativo);
     color: var(--branco);
     display: flex;
@@ -58,4 +58,16 @@ body {
 
 .botoes {
     display: block;
+}
+
+@media screen and (min-width: 768px){
+    .botoes{
+        display:flex;
+    }
+    .botao:first-child {
+        border-radius: 40px 0 0 0;
+    }
+    .botao:last-child {
+        border-radius: 0 40px 0 0;
+    }
 }
